@@ -1,6 +1,5 @@
-package com.pisces.function;
+package com.pisces.collect.guava.function;
 
-import com.pisces.collect.function.GuavaFunction;
 import org.junit.Test;
 
 import java.util.Date;
@@ -19,6 +18,11 @@ public class GuavaFunctionTest {
     @Test
     public void lookUpTest() {
         guavaFunction.lookUp();
+    }
+
+    @Test
+    public void transFormTest(){
+        guavaFunction.transform();
     }
 }
 

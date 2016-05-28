@@ -1,4 +1,4 @@
-package com.pisces.collect.predicates;
+package com.pisces.collect.guava.predicates;
 
 import com.google.common.base.Predicate;
 import com.google.common.base.Predicates;
