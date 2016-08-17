@@ -15,7 +15,7 @@ public class TcpEchoServer {
     public static void main(String[] args) throws IOException {
 
 
-        ServerSocket serverSocket = new ServerSocket(8001);
+        ServerSocket serverSocket = new ServerSocket(8004);
 
         System.out.println(serverSocket.getLocalSocketAddress());
 
@@ -34,11 +34,10 @@ public class TcpEchoServer {
             OutputStream outputStream=clientSocket.getOutputStream();
 
             while((recvMsgSize=inputStream.read(receiveBuf))!=-1){
-                outputStream.write(receiveBuf,0,recvMsgSize);
+                outputStream.write(receiveBuf, 0, recvMsgSize);
             }
 
             clientSocket.close();
-
         }
     }
 

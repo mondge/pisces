@@ -11,7 +11,7 @@ import java.net.Socket;
 public class TcpEchoClient {
 
     public static void main(String[] args) throws IOException {
-        Socket socket = new Socket("127.0.0.1", 8001);
+        Socket socket = new Socket("127.0.0.1", 8004);
         InputStream inputStream = socket.getInputStream();
         OutputStream outputStream = socket.getOutputStream();
 
